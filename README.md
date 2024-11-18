@@ -2,10 +2,10 @@
 SoundScape Song Playlists
 
 # Features
-* Share Projects
-* Message other developers
-* Rate others work
-* Search other developers
+* Mood-Based Playlist Generation
+* Customizable Playlists
+* Smart Recommendations
+* Social Sharing
 
 # Course Overview
 * Basic React Native Components
