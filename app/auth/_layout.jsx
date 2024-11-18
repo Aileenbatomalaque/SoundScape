@@ -8,7 +8,7 @@ import { SplashScreen } from 'expo-router'
 
 SplashScreen.preventAutoHideAsync();
 
-const MainLayout = () =>{
+const AuthLayout = () =>{
 
     const [fontsLoaded, error] = useFonts({
       });
@@ -29,16 +29,10 @@ const MainLayout = () =>{
     return(
         <>
         <Stack>
-            <Stack.Screen name="index" options={{
+            <Stack.Screen name="login" options={{
                 headerShown: false
             }}/>
-            <Stack.Screen name="melan" options={{
-                headerShown: false
-            }}/>
-            <Stack.Screen name="relax" options={{
-                headerShown: false
-            }}/>
-            <Stack.Screen name="happy" options={{
+            <Stack.Screen name="signup" options={{
                 headerShown: false
             }}/>
         </Stack>
@@ -46,4 +40,4 @@ const MainLayout = () =>{
     )
 }
 
-export default MainLayout
+export default AuthLayout

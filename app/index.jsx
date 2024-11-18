@@ -1,47 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, Image, TouchableOpacity } from 'react-native';
-import { Link } from 'expo-router';
+import { ScrollView, Text, View, Image, TouchableOpacity } from 'react-native';
+import { Link, Redirect, router } from 'expo-router';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { images } from '../constants';
+import CustomButton from '../components/CustomButton';
 
-const Index = () => {
+export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-[#FCE4EC] relative p-4">
-      {/* Soft Background Circle */}
-      <View
-        style={{
-          position: 'absolute',
-          width: 350,
-          height: 350,
-          borderRadius: 175,
-          backgroundColor: '#FFB2C1',
-          opacity: 0.3,
-          top: -100,
-          left: -150,
-          zIndex: 0,
-        }}
-      />
-      
-      {/* Logo at the top */}
-      <Image
-        source={require('../assets/logms.png')}
-        style={{
-          resizeMode: 'contain',
-          marginBottom: 40,
-          width: '70%',
-          height: '30%',
-          borderRadius: 20,
-          shadowColor: '#000',
-          shadowOffset: { width: 0, height: 5 },
-          shadowOpacity: 0.3,
-          shadowRadius: 10,
-        }}
-      />
+    <SafeAreaView className="bg-[#FCE4EC] h-full">
+      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
+        <View className="px-6 flex-1 justify-center items-center">
+        
+          <Image
+            source={images.logo}
+            className="w-[200] h-[200] mb-8"
+            resizeMode="contain"
+          />
+          <Text className="text-2xl  text-gray-500 text-center mb-4">
+            An app where people can express their emotions by connecting to music.
+          </Text>
 
-      {/* Tagline */}
-      <Text className="text-2xl text-[#FF6F91] font-semibold mb-5">Your Musical Escape</Text>
+          <Text className="text-lg text-gray-400 text-center mb-6">
+          Play sound and escape harsh reality.
+          </Text>
 
-      {/* Button for Start Listening */}
-      <View className="flex-row w-full justify-center mb-20">
-        <Link href="login" asChild>
+          
+          <View className="flex-row w-full justify-center mb-20">
+        <Link href="/auth/login" asChild>
           <TouchableOpacity
             className="bg-[#FF6F91] items-center justify-center py-4 px-10 rounded-full shadow-lg flex-row"
             style={{
@@ -51,7 +36,7 @@ const Index = () => {
             }}
           >
             <Image
-              source={require('../assets/note.png')}
+              source={require('../assets/images/note.png')}
               style={{
                 width: 30,
                 height: 30,
@@ -63,10 +48,10 @@ const Index = () => {
           </TouchableOpacity>
         </Link>
       </View>
+        </View>
+      </ScrollView>
 
-      <StatusBar style="auto" />
-    </View>
+      <StatusBar backgroundColor="#161622" style="light" />
+    </SafeAreaView>
   );
-};
-
-export default Index;
+}

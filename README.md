@@ -29,3 +29,7 @@ SoundScape Song Playlists
 
 # Tabs Screen
 <img src="assets/images/screenshot/tabs.png">  
+
+# Walkthrough
+
+[SoundScape Walkthrough](https://youtu.be/6LnMEmy--uk)

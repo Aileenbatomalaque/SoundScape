@@ -45,56 +45,56 @@ const Home = () => {
 
         {/* Playlist 1 */}
         <View className="flex-row items-center justify-between mb-4 p-3 bg-white rounded-lg shadow-lg">
-          <Image source={require('../../assets/1.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
+          <Image source={require('../../assets/images/1.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
           <Text className="text-lg font-medium flex-1 text-center">Playlist 1</Text>
           <View className="flex-row">
             <TouchableOpacity>
-              <Image source={require('../../assets/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
+              <Image source={require('../../assets/images/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image source={require('../../assets/share.png')} style={{ width: 24, height: 24 }} />
+              <Image source={require('../../assets/images/share.png')} style={{ width: 24, height: 24 }} />
             </TouchableOpacity>
           </View>
         </View>
 
         {/* Playlist 2 */}
         <View className="flex-row items-center justify-between mb-4 p-3 bg-white rounded-lg shadow-lg">
-          <Image source={require('../../assets/2.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
+          <Image source={require('../../assets/images/2.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
           <Text className="text-lg font-medium flex-1 text-center">Playlist 2</Text>
           <View className="flex-row">
             <TouchableOpacity>
-              <Image source={require('../../assets/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
+              <Image source={require('../../assets/images/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image source={require('../../assets/share.png')} style={{ width: 24, height: 24 }} />
+              <Image source={require('../../assets/images/share.png')} style={{ width: 24, height: 24 }} />
             </TouchableOpacity>
           </View>
         </View>
 
         {/* Playlist 3 */}
         <View className="flex-row items-center justify-between mb-4 p-3 bg-white rounded-lg shadow-lg">
-          <Image source={require('../../assets/3.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
+          <Image source={require('../../assets/images/3.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
           <Text className="text-lg font-medium flex-1 text-center">Playlist 3</Text>
           <View className="flex-row">
             <TouchableOpacity>
-              <Image source={require('../../assets/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
+              <Image source={require('../../assets/images/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image source={require('../../assets/share.png')} style={{ width: 24, height: 24 }} />
+              <Image source={require('../../assets/images/share.png')} style={{ width: 24, height: 24 }} />
             </TouchableOpacity>
           </View>
         </View>
 
         {/* Playlist 4 */}
         <View className="flex-row items-center justify-between mb-4 p-3 bg-white rounded-lg shadow-lg">
-          <Image source={require('../../assets/4.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
+          <Image source={require('../../assets/images/4.jpg')} style={{ width: 70, height: 70, borderRadius: 10 }} />
           <Text className="text-lg font-medium flex-1 text-center">Playlist 4</Text>
           <View className="flex-row">
             <TouchableOpacity>
-              <Image source={require('../../assets/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
+              <Image source={require('../../assets/images/del.png')} style={{ width: 24, height: 24, marginRight: 8 }} />
             </TouchableOpacity>
             <TouchableOpacity>
-              <Image source={require('../../assets/share.png')} style={{ width: 24, height: 24 }} />
+              <Image source={require('../../assets/images/share.png')} style={{ width: 24, height: 24 }} />
             </TouchableOpacity>
           </View>
         </View>
@@ -102,13 +102,13 @@ const Home = () => {
         {/* Featured Artists Section */}
         <View className="mt-6">
           <Text className="text-lg font-semibold text-[#D81B60]">SZA</Text>
-          <Image source={require('../../assets/sos.gif')} style={{ width: 340, height: 340, marginVertical: 8, borderRadius: 10 }} />
+          <Image source={require('../../assets/images/sos.gif')} style={{ width: 340, height: 340, marginVertical: 8, borderRadius: 10 }} />
           <Text className="text-gray-600">SOS is the second studio album by American singer-songwriter SZA. It was released on December 9, 2022, by Top Dawg Entertainment and RCA Records.</Text>
         </View>
 
         <View className="mt-6">
           <Text className="text-lg font-semibold text-[#D81B60]">Taylor Swift</Text>
-          <Image source={require('../../assets/taylor.gif')} style={{ width: 340, height: 340, marginVertical: 8, borderRadius: 10 }} />
+          <Image source={require('../../assets/images/taylor.gif')} style={{ width: 340, height: 340, marginVertical: 8, borderRadius: 10 }} />
           <Text className="text-gray-600">Under Big Machine Records' imprint, Fearless was released in North America on November 11, 2008, and elsewhere on March 9, 2009. To promote the album, Swift embarked on the Fearless Tour from April 2009 to July 2010, and five songs were released as singles.</Text>
         </View>
       </ScrollView>
